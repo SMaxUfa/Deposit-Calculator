@@ -36,7 +36,7 @@ public class DepositCalculator {
 	private JComboBox<String> comboBox = new JComboBox<String>(PERIOD_NAMES);	
 	private JLabel label3 = new JLabel("Процентная ставка (%):");
 	private JTextField field3 = new JTextField("10");
-	private JButton batton = new JButton("Расчитать начиления");
+	private JButton batton = new JButton("Рассчитать начиления");
 	private JLabel results = new JLabel("", 0);
 	
 	/**
