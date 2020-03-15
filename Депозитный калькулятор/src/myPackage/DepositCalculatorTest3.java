@@ -1,15 +1,15 @@
-package myPackage; 
+package myPackage;
 
-import org.junit.Assert; 
-import org.junit.jupiter.api.Test; 
+import org.junit.Assert;
+import org.junit.jupiter.api.Test;
 
-class DepositCalculatorTest3 { 
+class DepositCalculatorTest3 {
 
-	@Test 
-	void testGetProfit() { 
-		Assert.assertEquals("125,00", DepositCalculator.getProfit("5000", "3 мес€ца", "10")); 
-		Assert.assertEquals("79,97", DepositCalculator.getProfit("8000", "1 мес€ц", "12")); 
-		Assert.assertEquals(DepositCalculator.ERROR_MESSAGE, DepositCalculator.getProfit("230", "test", "50")); 
-		Assert.assertEquals(DepositCalculator.ERROR_MESSAGE, DepositCalculator.getProfit("30", " ", "10")); 
-	} 
+	@Test
+	void testGetProfit() {
+		Assert.assertEquals("343,00", DepositCalculator.getProfit("2450", "2 года", "7"));
+		Assert.assertEquals("259,00", DepositCalculator.getProfit("3700", "1 год", "7"));
+		Assert.assertEquals(DepositCalculator.ERROR_MESSAGE, DepositCalculator.getProfit("jkl", "2 года", "7"));
+		Assert.assertEquals(DepositCalculator.ERROR_MESSAGE, DepositCalculator.getProfit("1500", "1 год", "#$%"));
+	}
 }
