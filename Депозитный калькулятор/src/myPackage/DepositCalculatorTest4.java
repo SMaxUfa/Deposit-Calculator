@@ -7,9 +7,9 @@ class DepositCalculatorTest4 {
 
 	@Test 
 	void testGetProfit() { 
-		Assert.assertEquals("125,00", DepositCalculator.getProfit("5000", "3 мес€ца", "10")); 
-		Assert.assertEquals("79,97", DepositCalculator.getProfit("8000", "1 мес€ц", "12")); 
-		Assert.assertEquals(DepositCalculator.ERROR_MESSAGE, DepositCalculator.getProfit("230", "test", "50")); 
-		Assert.assertEquals(DepositCalculator.ERROR_MESSAGE, DepositCalculator.getProfit("30", " ", "10")); 
+		Assert.assertEquals("120,00", DepositCalculator.getProfit("1000", "1 год", "12")); 
+		Assert.assertEquals("440,00", DepositCalculator.getProfit("2000", "2 года", "11")); 
+		Assert.assertEquals(DepositCalculator.ERROR_MESSAGE, DepositCalculator.getProfit("", "", "")); 
+		Assert.assertEquals(DepositCalculator.ERROR_MESSAGE, DepositCalculator.getProfit("1000", "qwerty", "20")); 
 	} 
 }
